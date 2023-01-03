@@ -1,0 +1,4 @@
+Create a package called "geometry" and in the package create 2 modules - circle,
+rectangle with the following functions:
+Circle module - get_circle_area, get_circle_circumference
+Rectangle module - get_rect_area, get_rect_perimeter

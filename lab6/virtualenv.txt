@@ -1,0 +1,10 @@
+the python virtualenv helps to create a isolated virtual environment for working with seperate projects having
+their own requirements of needed packages with different versions with out affecting the global packages.
+to create a env
+first install virtualenv
+-python3.8n-m venv env(name of environment)
+source env/bin/activate
+pip list
+deactivate
+to store the pip packages in afile
+-pip freeze --local > req.txt
