@@ -5,12 +5,12 @@ again test using module related to exercise2.
 import lab41.geomentry.circle
 import lab41.geomentry.rectangle
 print ("enter the radius of circle: ")
-r = input ()
+radius = input ()
 print ("enter length and breadth: ")
-l = input ()
-b = input ()
+length = input ()
+breadth = input ()
 
-print ("the area of circle", lab41.geomentry.circle.get_circle_area (r))
-print ("circumference of circle", lab41.geomentry.circle.get_circle_circumference (r))
-print ("area of rectangle", lab41.geomentry.rectangle.get_area_rectangle (l, b))
-print ("perimeter of rectangle", lab41.geomentry.rectangle.get_perimeter_rectangle (l, b))
+print ("the area of circle", lab41.geomentry.circle.get_circle_area (radius))
+print ("circumference of circle", lab41.geomentry.circle.get_circle_circumference (radius))
+print ("area of rectangle", lab41.geomentry.rectangle.get_area_rectangle (length, breadth))
+print ("perimeter of rectangle", lab41.geomentry.rectangle.get_perimeter_rectangle (length, breadth))

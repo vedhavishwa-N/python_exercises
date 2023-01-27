@@ -6,11 +6,11 @@ filename = "100b.csv"
 fields = []
 rows = []
 with open (filename, 'r') as file1:
-    r = csv.reader (file1)
+    data = csv.reader (file1)
 
-    fields = next (r)
+    fields = next (data)
 
-    for row in r:
+    for row in data:
 
         rows.append (row)
 

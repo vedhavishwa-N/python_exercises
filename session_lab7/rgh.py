@@ -60,37 +60,37 @@ def images_in_dir(path):
 location=os.getcwd()
 print("all the images in the given location is:",images_in_dir(location))
 """
-import os
-import smtplib
+# import os
+# import smtplib
 
-from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
-from email import encoders
-EMAIL_ADDRESS = "onetester60@gmail.com"#input('enter your email address')
-EMAIL_PASSWORD = "fhlmavlzuzrgcxqj"#input('enter password')
-msg=MIMEMultipart()
-msg['subject']='check out the image'
-msg['From'] = EMAIL_ADDRESS
-msg['To']  = "vedha.natarajan3@gmail.com"#input('enter your receiver email address')
+# from email.mime.multipart import MIMEMultipart
+# from email.mime.base import MIMEBase
+# from email import encoders
+# EMAIL_ADDRESS = "onetester60@gmail.com"#input('enter your email address')
+# EMAIL_PASSWORD = "fhlmavlzuzrgcxqj"#input('enter password')
+# msg=MIMEMultipart()
+# msg['subject']='check out the image'
+# msg['From'] = EMAIL_ADDRESS
+# msg['To']  = "vedha.natarajan3@gmail.com"#input('enter your receiver email address')
 
-with open('chennai.jpg','rb')as f:
-    mime =MIMEBase('image','jpg',filename='chennai1.jpg')
-    mime.set_payload(f.read())
-    encoders.encode_base64(mime)
-    msg.attach(mime)
+# with open('chennai.jpg','rb')as f:
+#     mime =MIMEBase('image','jpg',filename='chennai1.jpg')
+#     mime.set_payload(f.read())
+#     encoders.encode_base64(mime)
+#     msg.attach(mime)
 
-with smtplib.SMTP_SSL( "smtp.gmail.com",465)as smtp:
-
-
-
-    print("till this")
+# with smtplib.SMTP_SSL( "smtp.gmail.com",465)as smtp:
 
 
 
-    smtp.login(EMAIL_ADDRESS,EMAIL_PASSWORD)
-    print("sucessfil login",)
-    smtp.sendmail('sender email',"vedha0943@gmail.com",msg.as_string())
-    print("done")
+#     print("till this")
+
+
+
+#     smtp.login(EMAIL_ADDRESS,EMAIL_PASSWORD)
+#     print("sucessfil login",)
+#     smtp.sendmail('sender email',"vedha0943@gmail.com",msg.as_string())
+#     print("done")
 
 
 
@@ -117,3 +117,7 @@ with smtplib.SMTP_SSL( "smtp.gmail.com",465)as smtp:
 #     print("sucessfil login",)
 #     smtp.sendmail('sender email',"vedha0943@gmail.com",msg.as_string())
 #     print("done")
+
+a = "hi"
+b = "vedha"
+print(f"{a}and{b}")

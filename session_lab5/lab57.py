@@ -10,9 +10,7 @@ Please find out how to create multi line strings easily
 import Class_mail
 mail1 = Class_mail.Mail ("this is a test mail",
                       "vedha",
-                      """vanniar meetu street,
-                      iyapanthangal,
-                      chrnnai.""",
+                      "vedha@gmail.com",
                       "vishwa",
                       "male",
                       """Write a class called Mail 

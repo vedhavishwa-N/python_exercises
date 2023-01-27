@@ -2,17 +2,17 @@ import csv
 import requests
 csv_file = "bk.csv"
 
-f = open(csv_file,"r")
+with open(csv_file,"r") as file:
 
-dr = csv.DictReader(f)
-print(dr)
-for book in dr:
-    book_dict = dict(book)
-    url = book_dict["image_url"]
-    file_name = url.split("/")[-1]
-    fw = open(file_name,"wb")
-    print("downloading {}".format(file_name))
-    response = requests.get(url)
-    content = response.content
-    fw.write(content)
-    fw.close()
+    data = csv.DictReader(file)
+    # print(data)
+    for row in data:
+        book_dict = dict(row)
+        url = book_dict["image_url"]
+        file_name = url.split("/")[-1]
+        file_write = open(file_name,"wb")
+        print("downloading {}".format(file_name))
+        response = requests.get(url)
+        content = response.content
+        file_write.write(content)
+        file_write.close()

@@ -6,9 +6,8 @@ import random
 
 def list_random_numbers (length):
     list = []
-    limit = length * 5
     for numbers in range (0, length):
-        list.append (random.randint (1, limit))
+        list.append (random.randint (1, length))
     return list
 
 length = eval (input ("enter the length of list : "))

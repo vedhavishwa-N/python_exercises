@@ -8,7 +8,7 @@ past=("in past life you were a robo-shark in the space",
 future=("in the future you will become a billionare",
         "in the future you will be a rockstar",
         "in the future you will be a programmer")
-global memory
+
 memory = {}
 
 def get_past_life_v1 (name):
