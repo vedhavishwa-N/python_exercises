@@ -13,7 +13,7 @@
     No other web resource should be used )
 """
 import Class_liguist
-print ("enter your string with space at last")
+print ("enter your string : ")
 string1 = Class_liguist.Linguist (input ())
 print (string1.analyze_text ())
 string1.is_english ()

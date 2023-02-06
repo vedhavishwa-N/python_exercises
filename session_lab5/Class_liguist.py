@@ -16,44 +16,34 @@ class Linguist( object):
         dict_string[ "number of characters"] = no_char
 
         #for finding length of the string
-        length = ( len( text) -1)
+        length = ( len( text))
         dict_string[ "length of the string"] = length
 
         #for finding number of words
-        no_words = 0
-        for char in text:
-            if char == " ":
-                no_words = no_words +1
+        
+        words_list=text.split()
+        no_words = len(words_list)
         dict_string[ "number of words"] = no_words
 
         #for finding unique characters
 
-        no_unique_char = 0
-        list = [" "]
+        
+        uni_char_list = []
         for char in text:
-            if char not in list:
-                no_unique_char = no_unique_char + 1
-                list.append( char)
+            if char !=" ":
+                if char not in uni_char_list:
+
+                    uni_char_list.append( char)
+        no_unique_char = len(uni_char_list)
         dict_string[ "number of unique characters"] = no_unique_char
 
         #for finding unique word
-        list2 = []
-        list1 = []
-
-        for char in text:
-            if char == " ":
-                st = str( list1)
-                list2.append( st)
-                list1 = []
-            else:
-                list1.append(char)
-        dum = list[ 0]
-        no_unique_words = 0
-        list3 = []
-        for n in list2:
-            if n not in list3:
-                no_unique_words = no_unique_words + 1
-                list3.append( n)
+        uni_word_list=[]
+        
+        for word in words_list:
+            if word not in uni_word_list:
+                uni_word_list.append(word)
+        no_unique_words = len(uni_word_list)
         dict_string[ "number of unique words"] = no_unique_words
 
         return dict_string
